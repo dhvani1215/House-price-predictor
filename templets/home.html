@@ -1,0 +1,57 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+       
+        h2{
+            margin-top:150px;
+            font-size:40px;
+            display: flex;
+            justify-content: center;
+        }
+        h1{
+            font-size:60px;
+            display: flex;
+            justify-content: center;
+        }
+
+        form{
+            display: flex;
+            justify-content: center;
+        }
+
+        .btn{
+            background-color:#000000;
+            color:white;
+            cursor:pointer;
+            padding: 16px 32px;
+            border: none;
+            border-radius: 8px; /* Makes the button's corners rounded */
+            font-size: 16px;
+            text-transform: uppercase; /* Makes the text uppercase for consistency */
+            margin-top: 20px; /* Adds space between the heading and the button */
+            transition: background-color 0.3s; /* Adds a smooth transition effect */
+        }
+
+        body{
+            background-image: url("{% static '5.jpg'%}");
+            background-size:cover;
+            background-repeat:no-repeat;
+        }
+        
+    </style>
+    
+</head>
+<body>
+   <h2>Welcome to</h2>
+   <h1>House Price Prediction System</h1>
+   <form action="predict">
+    <input type="submit" class="btn" value="START">
+   </form>
+</body>
+</html>
